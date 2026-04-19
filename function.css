@@ -16,7 +16,6 @@ table {
 img:hover {
     transform: scale(1.09);
 }
-
 input, select {
     padding: 5px;
     width: 90%;
