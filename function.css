@@ -3,7 +3,6 @@ body {
     margin: 0;
     background-color: lightblue;
 }
-
 h2 {
     text-align: center;
     background-color: orange;
@@ -15,7 +14,7 @@ table {
     background-color: white;
 }
 img:hover {
-    transform: scale(1.05);
+    transform: scale(1.09);
 }
 
 input, select {
