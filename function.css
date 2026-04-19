@@ -1,1 +1,30 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: lightblue;
+}
 
+h2 {
+    text-align: center;
+    background-color: orange;
+    padding: 8px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+img:hover {
+    transform: scale(1.05);
+}
+
+input, select {
+    padding: 5px;
+    width: 90%;
+}
+input[type="submit"], input[type="reset"] {
+    width: auto;
+    padding: 6px 12px;
+    margin: 5px;
+    cursor: pointer;
+}
