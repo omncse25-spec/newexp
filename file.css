@@ -4,39 +4,34 @@ body {
     margin: 10px;
 }
 
+/* Headings */
 h2 {
     background-color: lightgray;
     padding: 5px;
 }
 
+/* Tables */
 table {
     border-collapse: collapse;
 }
 
 td, th {
-    border: 1px orange;
+    border: 1px solid black;
     padding: 5px;
 }
+
+/* Images */
 img {
     border: 1px solid black;
-    transition: 0.3s;
 }
 
-img:hover {
-    transform: scale(1.08);
-}
-
+/* Form */
 input, select {
     padding: 5px;
 }
 
+/* Buttons */
 input[type="submit"], input[type="reset"] {
     padding: 5px 10px;
     margin: 5px;
-}
-img {
-    border: 1px solid black;
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
 }
