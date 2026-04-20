@@ -1,25 +1,36 @@
+
 body {
-    font-family: Times in roman;
+    font-family: "Times New Roman";
     margin: 0;
     background-color: lightblue;
 }
+
 h2 {
     text-align: center;
     background-color: orange;
     padding: 8px;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
     background-color: white;
 }
+td {
+    padding: 8px;
+}
+td:first-child {
+    width: 120px;
+}
 img:hover {
     transform: scale(1.09);
 }
+
 input, select {
     padding: 5px;
     width: 90%;
 }
+
 input[type="submit"], input[type="reset"] {
     width: auto;
     padding: 6px 12px;
