@@ -29,6 +29,12 @@ img {
 input, select {
     padding: 5px;
 }
+img {
+    width: 100%;       /* pura cell cover kare */
+    height: 200px;     /* fix height */
+    object-fit: cover; /* stretch na ho */
+    display: block;    /* extra gap hata dega */
+}
 
 /* Buttons */
 input[type="submit"], input[type="reset"] {
