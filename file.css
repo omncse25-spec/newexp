@@ -1,51 +1,38 @@
+
 body {
-    font-family: "Times New Roman";
-    margin: 0;
-    background-color: lightblue;
+    font-family: Arial;
+    margin: 10px;
 }
 
 h2 {
-    text-align: center;
-    background-color: orange;
-    padding: 10px;
+    background-color: lightgray;
+    padding: 5px;
 }
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 20px;
+
+table {
+    border-collapse: collapse;
 }
-.gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* 🔥 Image + Hover Effect */
+img {
+    border: 1px solid black;
     transition: 0.3s;
 }
-.gallery img:hover {
+
+img:hover {
     transform: scale(1.08);
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-}
 
-td {
-    padding: 8px;
-}
-
-td:first-child {
-    width: 120px;
-}
 input, select {
-    padding: 6px;
-    width: 90%;
+    padding: 5px;
 }
 
 input[type="submit"], input[type="reset"] {
-    width: auto;
-    padding: 6px 12px;
+    padding: 5px 10px;
     margin: 5px;
-    cursor: pointer;
 }
