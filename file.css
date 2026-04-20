@@ -11,9 +11,9 @@ h2 {
     text-align: center;
     color: white;
 }
-h2:hover {
-    background-color: darkorange;
-    transform: scale(1.02);
+img:hover {
+    transform: scale(1.1);
+    border-color: orange;
 }
 
 table {
