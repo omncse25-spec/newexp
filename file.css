@@ -2,7 +2,7 @@
 body {
     font-family: Arial;
     margin: 10px;
-    background-color: wheat;  /* light cream background */
+    background-color: wheat;
 }
 
 h2 {
@@ -11,12 +11,16 @@ h2 {
     text-align: center;
     color: white;
 }
+h2:hover {
+    background-color: darkorange;
+    transform: scale(1.02);
+}
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 15px;
-    background-color: white;  /* table white rakha for clean look */
+    background-color: white; 
 }
 
 td, th {
