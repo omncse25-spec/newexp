@@ -14,11 +14,9 @@ table {
 }
 
 td, th {
-    border: 1px solid black;
+    border: 1px orange;
     padding: 5px;
 }
-
-/* 🔥 Image + Hover Effect */
 img {
     border: 1px solid black;
     transition: 0.3s;
