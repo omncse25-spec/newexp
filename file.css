@@ -8,20 +8,30 @@ body {
 h2 {
     background-color: lightgray;
     padding: 5px;
+    text-align: center;
 }
 
 /* Tables */
 table {
+    width: 100%;
     border-collapse: collapse;
+    margin-bottom: 15px;
 }
 
+/* Table cells */
 td, th {
     border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
+    text-align: center;
 }
 
-/* Images */
+/* 🔥 Images same size + proper spacing */
 img {
+    width: 200px;        /* same width */
+    height: 150px;       /* same height */
+    object-fit: cover;   /* stretch nahi hogi */
+    display: block;
+    margin: auto;
     border: 1px solid black;
 }
 
@@ -29,15 +39,10 @@ img {
 input, select {
     padding: 5px;
 }
-img {
-    width: 100%;       /* pura cell cover kare */
-    height: 200px;     /* fix height */
-    object-fit: cover; /* stretch na ho */
-    display: block;    /* extra gap hata dega */
-}
 
 /* Buttons */
 input[type="submit"], input[type="reset"] {
     padding: 5px 10px;
     margin: 5px;
+    cursor: pointer;
 }
