@@ -36,3 +36,9 @@ input[type="submit"], input[type="reset"] {
     padding: 5px 10px;
     margin: 5px;
 }
+img {
+    border: 1px solid black;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
