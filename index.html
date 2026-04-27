@@ -7,9 +7,12 @@
 <title>La Pasta Bella</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
+<!-- ✅ External CSS -->
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -23,14 +26,12 @@
 <li><a class="nav-link" href="#" onclick="showPage('home')">Home</a></li>
 <li><a class="nav-link" href="#" onclick="showPage('menu')">Menu</a></li>
 <li><a class="nav-link" href="#" onclick="showPage('gallery')">Gallery</a></li>
-<li><a class="nav-link" href="#" onclick="showPage('feedback')">Feedback</a></li>
 </ul>
 </div>
 </nav>
 
 <!-- HOME -->
 <div id="home" class="page active-page">
-
 <div class="hero">
 <div>
 <h1>Welcome to La Pasta Bella</h1>
@@ -39,7 +40,6 @@
 </div>
 </div>
 
-<!-- TABLE RESERVATION -->
 <div class="container section">
 <h2 class="text-center mb-4">Table Reservation</h2>
 
@@ -66,64 +66,58 @@
 </form>
 </div>
 
-<!-- CONTACT -->
 <div class="container section">
 <h2 class="text-center">Contact Us</h2>
 
-<form>
+<form class="mt-4">
 <input class="form-control mb-3" placeholder="Name">
 <input class="form-control mb-3" placeholder="Email">
 <textarea class="form-control mb-3" placeholder="Message"></textarea>
 <button class="btn btn-custom">Send</button>
 </form>
 </div>
-
 </div>
 
 <!-- MENU -->
 <div id="menu" class="page container mt-5">
 <h2 class="text-center">Menu</h2>
-<p class="text-center">Delicious items here...</p>
+
+<div class="row mt-4">
+<div class="col-md-4">
+<div class="card p-3 text-center">
+<h4>Veg</h4>
+<p>Pasta ₹250</p>
+<p>Pizza ₹300</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3 text-center">
+<h4>Non-Veg</h4>
+<p>Chicken Pasta ₹350</p>
+<p>Chicken Pizza ₹400</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3 text-center">
+<h4>Dessert</h4>
+<p>Ice Cream ₹100</p>
+<p>Brownie ₹120</p>
+</div>
+</div>
+</div>
 </div>
 
 <!-- GALLERY -->
 <div id="gallery" class="page container mt-5">
 <h2 class="text-center">Gallery</h2>
+
+<div class="row mt-4">
+<div class="col-md-4"><img src="pasta.jpg" class="img-fluid rounded"></div>
+<div class="col-md-4"><img src="pizza.jpg" class="img-fluid rounded"></div>
+<div class="col-md-4"><img src="sweet.jpg" class="img-fluid rounded"></div>
 </div>
-
-<!-- FEEDBACK -->
-<div id="feedback" class="page container mt-5">
-
-<h2 class="text-center mb-4">Customer Rating ⭐</h2>
-
-<form id="feedbackForm">
-
-<div class="mb-3">
-<input type="text" class="form-control" placeholder="Your Name" required>
-</div>
-
-<div class="mb-3 text-center rating">
-<span onclick="setRating(1)">★</span>
-<span onclick="setRating(2)">★</span>
-<span onclick="setRating(3)">★</span>
-<span onclick="setRating(4)">★</span>
-<span onclick="setRating(5)">★</span>
-</div>
-
-<input type="hidden" id="ratingValue">
-
-<div class="mb-3">
-<textarea class="form-control" placeholder="Write feedback..." required></textarea>
-</div>
-
-<div class="text-center">
-<button class="btn btn-custom">Submit</button>
-</div>
-
-</form>
-
-<p id="feedbackMsg" class="text-center mt-3"></p>
-
 </div>
 
 <!-- FOOTER -->
