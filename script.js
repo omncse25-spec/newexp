@@ -1,4 +1,3 @@
-// Page Switch
 function showPage(pageId) {
     let pages = document.querySelectorAll('.page');
 
@@ -9,7 +8,6 @@ function showPage(pageId) {
     document.getElementById(pageId).classList.add('active-page');
 }
 
-// ⭐ Rating System
 function setRating(value) {
     let stars = document.querySelectorAll('.rating span');
     document.getElementById("ratingValue").value = value;
@@ -23,7 +21,6 @@ function setRating(value) {
     });
 }
 
-// Form Submit
 document.addEventListener("DOMContentLoaded", function () {
     let form = document.getElementById("feedbackForm");
 
