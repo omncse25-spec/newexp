@@ -1,13 +1,19 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background: white;
 }
 
 .navbar {
     background: orange;
 }
 
-.page { display: none; }
-.active-page { display: block; }
+.page {
+    display: none;
+}
+
+.active-page {
+    display: block;
+}
 
 .hero {
     height: 100vh;
@@ -15,7 +21,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
     text-align: center;
+}
+
+.card {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 .btn-custom {
@@ -32,20 +48,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-/* ⭐ Rating */
-.rating span {
-    font-size: 30px;
-    cursor: pointer;
-    color: gray;
-}
-
-.rating span.active {
-    color: gold;
-}
-
-#feedbackMsg {
-    color: green;
-    font-weight: bold;
 }
