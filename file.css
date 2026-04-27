@@ -1,11 +1,10 @@
-<style>
 body {
     font-family: 'Poppins', sans-serif;
-    background: Orange;
+    background: white;
 }
 
 .navbar {
-    background: black;
+    background: orange;
 }
 
 .page { display: none; }
@@ -17,7 +16,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
 }
 
@@ -25,6 +23,7 @@ body {
     border-radius: 15px;
     transition: 0.3s;
 }
+
 .card:hover {
     transform: translateY(-10px);
 }
@@ -43,5 +42,22 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+/* ⭐ Rating */
+.rating span {
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+}
+
+.rating span.active {
+    color: gold;
+}
+
+#feedbackMsg {
+    color: green;
+    font-weight: bold;
+}
 }
 </style>
