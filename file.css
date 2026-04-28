@@ -1,10 +1,5 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f8f9fa;
-}
-
-.navbar {
-    background: black;
 }
 
 .page {
@@ -17,53 +12,33 @@ body {
 
 .hero {
     height: 100vh;
-    background: url('home.jpg') center/cover;
+    background: url('https://source.unsplash.com/1600x900/?restaurant') center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     text-align: center;
-}
-
-.card {
-    border-radius: 15px;
-    transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-10px);
+    transition: 0.3s;
 }
 
 .btn-custom {
-    background: linear-gradient(to right, orange, red);
+    background: orange;
     color: white;
 }
 
-.section {
-    padding: 50px 0;
-}
-
-footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-/* GALLERY IMAGE FIX */
+/* GALLERY */
 .gallery-img {
     width: 100%;
-    height: 250px;        /* same size */
-    object-fit: cover;    /* stretch fix */
-    border-radius: 12px;
-    transition: 0.3s ease;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-/* HOVER EFFECT */
 .gallery-img:hover {
     transform: scale(1.08);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-.gallery-img:hover {
-    transform: scale(1.08);
-    filter: brightness(1.1);
 }
