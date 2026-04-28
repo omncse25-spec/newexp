@@ -20,7 +20,3 @@ function loadImages() {
     `;
   }
 }
-function showPage(pageId) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active-page'));
-  document.getElementById(pageId).classList.add('active-page');
-}
