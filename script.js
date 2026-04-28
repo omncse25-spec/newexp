@@ -1,22 +1,18 @@
+// Page switching function
 function showPage(pageId) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active-page'));
-  document.getElementById(pageId).classList.add('active-page');
 
-  if (pageId === "gallery") {
-    loadImages();
-  }
+    // sab pages hide karo
+    let pages = document.querySelectorAll(".page");
+    pages.forEach(function(page) {
+        page.classList.remove("active-page");
+    });
+
+    // selected page show karo
+    document.getElementById(pageId).classList.add("active-page");
 }
 
-function loadImages() {
-  const gallery = document.querySelector("#gallery .row");
 
-  gallery.innerHTML = "";
-
-  for (let i = 0; i < 9; i++) {
-    gallery.innerHTML += `
-      <div class="col-md-4">
-        <img src="https://source.unsplash.com/400x300/?food" class="gallery-img">
-      </div>
-    `;
-  }
-}
+// Default page load hone par HOME show ho
+document.addEventListener("DOMContentLoaded", function () {
+    showPage("home");
+});
