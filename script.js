@@ -1,10 +1,19 @@
-function loadImages() {
-  const galleryContainer = document.querySelector("#gallery .row");
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active-page'));
+  document.getElementById(pageId).classList.add('active-page');
 
-  galleryContainer.innerHTML = "";
+  if (pageId === "gallery") {
+    loadImages();
+  }
+}
+
+function loadImages() {
+  const gallery = document.querySelector("#gallery .row");
+
+  gallery.innerHTML = "";
 
   for (let i = 0; i < 9; i++) {
-    galleryContainer.innerHTML += `
+    gallery.innerHTML += `
       <div class="col-md-4">
         <img src="https://source.unsplash.com/400x300/?food" class="gallery-img">
       </div>
