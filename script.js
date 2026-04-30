@@ -8,16 +8,10 @@ function showPage(pageId) {
 
 document.addEventListener("DOMContentLoaded", function () {
     showPage("home");
-
-    // --- EmailJS Integration ---
-    
-    // 1. Initialize EmailJS with your Public Key
     emailjs.init("amzFTCPfPl5yMXZMH");
 
     const serviceID = "service_8u6uoqj";
     const templateID = "template_k51zipe";
-
-    // Table Reservation Form Submission
     const reservationForm = document.getElementById("reservation-form");
     if (reservationForm) {
         reservationForm.addEventListener("submit", function (event) {
@@ -36,9 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     alert("Failed to send reservation: " + JSON.stringify(err));
                 });
         });
-    }
 
-    // Contact Us Form Submission
     const contactForm = document.getElementById("contact-form");
     if (contactForm) {
         contactForm.addEventListener("submit", function (event) {
