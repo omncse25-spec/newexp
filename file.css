@@ -2,19 +2,15 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #f8f9fa;
 }
-
 .navbar {
     background: black;
 }
-
 .page {
     display: none;
 }
-
 .active-page {
     display: block;
 }
-
 .hero {
     height: 100vh;
     background: url('home.jpg') center/cover;
@@ -24,12 +20,10 @@ body {
     color: black;
     text-align: center;
 }
-
 .card {
     border-radius: 15px;
     transition: 0.3s;
 }
-
 .card:hover {
     transform: translateY(-10px);
 }
@@ -38,11 +32,9 @@ body {
     background: linear-gradient(to right, orange, red);
     color: white;
 }
-
 .section {
     padding: 50px 0;
 }
-
 footer {
     background: black;
     color: white;
@@ -56,7 +48,6 @@ footer {
     border-radius: 12px;
     transition: 0.3s ease;
 }
-
 .gallery-img:hover {
     transform: scale(1.08);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
